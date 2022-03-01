@@ -16,6 +16,10 @@
                 <p id="element1">Plugin Element 1</p>
                 <p id="element2">Plugin Element 2</p>
             </div>
+
+            <input type="text" id="number" placeholder="Enter your number" />
+            <p><span class="emsg hidden">invalid number</span></p>
+            <img src="images/ajax-loader.gif" class="hidden" id="loader" />
         </div>
     </section>
 
@@ -30,10 +34,12 @@
         $(document).ready(function(){
 
             // Call Plugin
-            $('#element1').nepo();
+            $('#number').nepo();
 
             // Call Plugin with options
-            $('#element2').nepo({ myStyle: 'my-style2' });
+            $('#element2').nepo({ 
+                myStyle: 'my-style2' 
+            });
 		});
 
     </script>
