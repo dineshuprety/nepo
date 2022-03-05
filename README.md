@@ -1,6 +1,7 @@
 # nepo
 #### Nepo, is a phone number checker for Nepali developers which helps to detect the number belongs to nepal sim company.
-# Comming soon 
+### Ncell, Ntc, Sky, Utl, Smart etc
+![Nepo](https://demo.dineshuprety.com.np/image/nepo.gif)
 [![npm version](https://badge.fury.io/js/nepo.svg)](https://www.npmjs.com/package/nepo)
 
 Requirements
@@ -49,7 +50,7 @@ Include CSS
 
 HTML
 ```html
-<div id="element"></div>
+<input type="text" id="element" placeholder="Enter your number:" />
 ```
 
 Include jQuery
@@ -66,9 +67,21 @@ Initialize the Plugin
 $('#element').nepo();
 ```
 
+
 License
 ----
 MIT
+
+Contribute
+----
+If you like the project please support with your contribution.
+----
+
+Donate on esewa 9807393225
+----
+
+Thank you and Happy Coding :)
+----
 
 
 Created with :heart: [FortranCoder](https://dineshuprety.com.np)

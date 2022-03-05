@@ -57,9 +57,7 @@
             this._getOnly10Digit();
 
             //only numeric (0-9) in HTML
-            this._ForceNumericOnly();
-
-            
+            this._ForceNumericOnly();           
 
         }
 
