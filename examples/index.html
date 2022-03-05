@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>nepo Example</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Include Plugin CSS file -->
-    <link href="./css/nepo.min.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <br />
-    <section class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p id="element1">Plugin Element 1</p>
-                <p id="element2">Plugin Element 2</p>
+   <head>
+      <title>nepo Example</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- include bootstrap cdn -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!-- Include Plugin CSS file -->
+      <link href="./css/nepo.min.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+         <h5 class="my-0 mr-md-auto font-weight-normal">NEPO</h5>
+         <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Features</a>
+            <a class="p-2 text-dark" href="#">Enterprise</a>
+            <a class="p-2 text-dark" href="#">Support</a>
+            <a class="p-2 text-dark" href="#">Pricing</a>
+         </nav>
+         <a class="btn btn-outline-primary" href="">Sign up</a>
+      </div>
+      <div class="container">
+         <section class="vh-100">
+            <div class="container h-100">
+               <div class="row d-flex justify-content-center align-items-center h-100">
+                  <div class="col-lg-12 col-xl-11">
+                     <div class="card text-black" style="border-radius: 25px;">
+                        <div class="card-body p-md-5">
+                           <div class="row justify-content-center">
+                              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                                 <form class="mx-1 mx-md-4">
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                       <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example1c">Your Name</label>
+                                          <input type="text" id="name" class="form-control" />
+                                         
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                       <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example3c">Your Phone Number</label>
+                                          <input type="text" id="number" class="form-control" />
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                       <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example4c">Password</label>
+                                          <input type="password" id="password" class="form-control" />
+                                         
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                       <button type="button" id="register" class="btn btn-primary btn-lg">Register</button>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp" class="img-fluid" alt="Sample image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
+         </section>
+      </div>
+    </br>
+      <!-- Include jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+      <!-- Include Plugin JS file -->
+      <script src="./js/nepo.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
 
-            <input type="text" id="number" placeholder="Enter your number" />
-            <p><span class="emsg hidden">invalid number</span></p>
-            <img src="" class="hidden" id="loader" />
-        </div>
-    </section>
+         $(document).ready(function(){
+         
+             // Call Plugin
+             $('#number').nepo({
+                 // Your options here
+                
+             });
+         
+         });
+         
+      </script>
+       <script type="text/javascript">
 
-
-    <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-
-    <!-- Include Plugin JS file -->
-    <script src="./js/nepo.min.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
         $(document).ready(function(){
+        
+          //register 
+            $('#register').click(function(){
 
-            // Call Plugin
-            $('#number').nepo();
+                let name = $('#name').val();
+                let number = $('#number').val();
+                let password = $('#password').val();
+                
+                if(name == '' || number == '' || password == ''){
+                    alert('Please fill all the fields');
+                }
+                else
+                {
+                    alert('Successfully Registered');
+                }
+                
 
-            // Call Plugin with options
-            $('#element2').nepo({ 
-                myStyle: 'my-style2' 
             });
-		});
-
-    </script>
-</body>
+        
+        });
+        
+     </script>
+   </body>
 </html>
