@@ -101,8 +101,7 @@
             const utl_regex = new RegExp(utl);
 
             // plugin user settings
-            const settings = this.options;
-            console.log(settings);
+            const settings = this.options;           
 
 
             this.main.on('keypress keydown keyup',function() {

@@ -114,7 +114,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
         var utl_regex = new RegExp(utl); // plugin user settings
 
         var settings = this.options;
-        console.log(settings);
         this.main.on('keypress keydown keyup', function () {
           // new nepoElement
           var nepoElement = $('<div class="nepo-element"></div>'); // make empty nepo element
