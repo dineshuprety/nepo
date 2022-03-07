@@ -18,12 +18,19 @@
     "lint": "gulp lint"
   },
   "keywords": [
-    "util",
-    "create-jquery-plugin",
-    "cli",
+    "nepo",
     "jquery",
     "jquery-plugin",
-    "jquery-plugin-boilerplate"
+    "phone",
+    "number",
+    "checker",
+    "sim",
+    "sim card",
+    "sim card number",
+    "sim card number checker",
+    "sim card number checker for nepali",
+    "sim card number checker for nepali developers",
+    "sim card number checker for nepali developers in nepal"
   ],
   "devDependencies": {
     "@babel/core": "^7.8.3",
