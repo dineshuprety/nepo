@@ -72,7 +72,14 @@ Initialize the Plugin
 ```js
 $('#element').nepo();
 ```
-
+Initialize the Plugin with options
+```js
+//you can define own css for sim company logo
+$('#element').nepo({
+        // Default css class for image
+        imageClass: 'nepo-image',
+});
+```
 
 License
 ----
